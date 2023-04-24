@@ -9,7 +9,6 @@ Note Taker is an application that allows small business owners to write, save, a
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Demo Link](#demo-link)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
