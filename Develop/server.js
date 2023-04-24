@@ -35,8 +35,8 @@ app.get('/', (req, res) => {
     const noteId = parseInt(req.params.id);
     const notes = JSON.parse(fs.readFileSync(path.join(__dirname, './db/db.json'), 'utf8'));
     const updatedNotes = notes.filter((note) => note.id !== noteId);
-    fs.writeFileSync(path.join(__dirname, './db/db.json'), JSON.stringify(notes), 'utf8');
-    res.json(updatedNotes); 
+    fs.writeFileSync(path.join(__dirname, './db/db.json'), JSON.stringify(updatedNotes), 'utf8'); 
+    res.json(updatedNotes);
   });
 
   app.listen(PORT, () => {
